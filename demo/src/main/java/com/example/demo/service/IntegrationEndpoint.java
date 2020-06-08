@@ -5,8 +5,6 @@ import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.integration.annotation.Transformer;
 @MessageEndpoint
 public class IntegrationEndpoint {
-
-	
 	
 
 		@Transformer(inputChannel = "fromTcp", outputChannel = "toEcho")

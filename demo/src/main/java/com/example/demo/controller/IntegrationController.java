@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.service.IntegrationGateway;
+import com.example.demo.service.IntegrationGatewayNew;
 
 @RestController
 @RequestMapping("/integration")
@@ -14,7 +14,7 @@ public class IntegrationController {
 
 	
 	@Autowired
-	IntegrationGateway ig;
+	IntegrationGatewayNew ig;
 	
 	@GetMapping(value = "{name}")
 	public String get(@PathVariable("name") String name) {
