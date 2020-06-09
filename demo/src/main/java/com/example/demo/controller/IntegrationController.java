@@ -18,7 +18,7 @@ public class IntegrationController {
 	
 	@GetMapping(value = "{name}")
 	public String get(@PathVariable("name") String name) {
-		return ig.sendMessage(name);
+		return ig.sendMessage(name, "123");
 	}
 	
 }
